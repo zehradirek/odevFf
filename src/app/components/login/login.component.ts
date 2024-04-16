@@ -34,7 +34,7 @@ loginForm!: FormGroup;
        
        if (this.authService.login(username, password)) {
         // Navigate to the ProductListComponent upon successful login
-        this.router.navigate(['/home']);
+        this.router.navigate(['/dashboard']);
       } else {
         alert ('Şifre Yanlış')
         // Handle authentication error (show error message, etc.)
